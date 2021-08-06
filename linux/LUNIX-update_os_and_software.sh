@@ -12,15 +12,17 @@
 ##MAIN
 #RUNNING UPDATES
 UPDATE_NONOS
+sleep 2s
 UPDATE_OS
+sleep 2s
 
 #reboot
 echo "script finished"
 echo "rebooting now"
+sleep 2s
 reboot now
 systemctl reboot now
 shutdown -r now
-
 exit
 
 ##FUNCTIONS
