@@ -66,9 +66,11 @@ UPDATE_OS () {
         then
             echo "dnf found"
             dnf upgrade -y -v --refresh
+            sleep 2s
         else
             echo "yum found"
             yum update -y 
+            sleep 2s
         fi
     fi
 
@@ -78,15 +80,23 @@ UPDATE_OS () {
         then
             echo "apt found"
             apt -y clean
+            sleep 2s
             apt -y update
+            sleep 2s
             apt -y upgrade
+            sleep 2s
             apt -y autoremove
+            sleep 2s
         else
             echo "apt-get found"
             apt-get -y clean
+            sleep 2s
             apt-get -y update
+            sleep 2s
             apt-get -y upgrade
-            apt-get -y autoremove 
+            sleep 2s
+            apt-get -y autoremove
+            sleep 2s
         fi
     fi
 
