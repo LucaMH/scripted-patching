@@ -3,7 +3,7 @@
 #RELEASE         : 20210806
 #CREATOR         : LucaMH
 #CONTRIBUTORS    : Sagamir
-#LICENSE         : MIT
+#LICENSE         : The Unlicense
 #DISCLAIMER      : if this script breaks your system, it is your fault you ran conde before checking the code, always check code which you dont own before running it!
 
 ##GLOBAL SETTINGS
