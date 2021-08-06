@@ -30,5 +30,18 @@ UPDATE_NONOS () {
 }
 
 UPDATE_OS () {
+    
+    #dnf&yum
+    if [ -x "$(command -v dnf)" ] | [ -x "$(command -v yum)" ];
+        if [ -x "$(command -v dnf)" ]
+        then
+            echo "dnf found"
+            dnf upgrade -y -v --refresh
+        else
+            echo "yum found"
+            yum update -y 
+        fi
+    fi
+
 
 }
