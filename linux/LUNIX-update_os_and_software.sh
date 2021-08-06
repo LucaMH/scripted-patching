@@ -1,8 +1,8 @@
 #!/bin/bash
 ##HEADER
-#RELEASE         : 20210906
+#RELEASE         : 20210806
 #CREATOR         : LucaMH
-#CONTRIBUTORS    : -
+#CONTRIBUTORS    : Sagamir
 #LICENSE         : MIT
 #DISCLAIMER      : if this script breaks your system, it is your fault you ran conde before checking the code, always check code which you dont own before running it!
 
