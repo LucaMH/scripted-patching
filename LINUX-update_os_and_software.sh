@@ -23,6 +23,7 @@ sleep 2s
 reboot now
 systemctl reboot now
 shutdown -r now
+#exiting becuase why not
 exit
 
 ##FUNCTIONS
