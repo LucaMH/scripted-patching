@@ -38,7 +38,7 @@ UPDATE_NONOS () {
         pip2 install --upgrade pip
         sleep 2s
         echo "updating outdated pip2 packages"
-        pip2 list --outdated | cut -f1 -d' ' | awk '{if(NR>=3)print}' | xargs -n1 pip install --upgrade
+        pip2 list --outdated | cut -f1 -d' ' | awk '{if(NR>=3)print}' | xargs -n1 pip2 install --upgrade
         sleep 2s
         echo "done"
     else
@@ -53,7 +53,7 @@ UPDATE_NONOS () {
         pip3 install --upgrade pip
         sleep 2s
         echo "updating outdated pip3 packages"
-        pip3 list --outdated | cut -f1 -d' ' | tr " " "\n" | awk '{if(NR>=3)print}' | cut -d' ' -f1 | xargs -n1 pip install --upgrade
+        pip3 list --outdated | cut -f1 -d' ' | tr " " "\n" | awk '{if(NR>=3)print}' | cut -d' ' -f1 | xargs -n1 pip3 install --upgrade
         sleep 2s
     else
         echo "there is no pip3"
